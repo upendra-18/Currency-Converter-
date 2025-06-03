@@ -1,0 +1,59 @@
+<html>
+  <head>
+     <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+       <h2 style="font-size: 3rem;padding-left: 10rem;padding-bottom: 3rem;padding-top: 2.5rem">
+          Currency Converter
+       </h2>
+       <form id="form">
+          <div class="amount">
+             <p style="font-size: 2rem;font-weight: bold"
+             >
+                Enter Amount:
+             </p>
+             <input class="inputtag" type="text" value="100" />  
+          </div>
+          <div class="dropdown">
+             <div class="from">
+                <p style="font-size: 1.2rem;font-weight: bold">
+                   From:
+                </p>
+                <div class="select-container">
+<img src="https://flagsapi.com/US/flat/16.png" class="fromflag flag"/>
+                   <select name="from" class="in-dropdown"> 
+                   </select>
+                </div>
+                
+             </div>
+             <i class="fa-solid fa-arrow-right-arrow-left converter"></i>
+             <div class="to">
+                <p style="font-size: 1.2rem;font-weight: bold">
+                   To:
+                </p>
+                <div class="select-container">
+<img src="https://flagsapi.com/IN/flat/16.png" class="toflag flag"/>
+                   <select name="to" class="in-dropdown">  
+                   </select>
+                </div>
+             </div>
+             
+          </div>
+          <p class="reval">
+             1USD=82INR
+          </p>
+          <button>
+             Get Exchange Rate
+          </button>
+       </form>
+       
+       
+    </div>
+    
+    <script src="script.js">
+     </script>
+  </body>
+</html>
